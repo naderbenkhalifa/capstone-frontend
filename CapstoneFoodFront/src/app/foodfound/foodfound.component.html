@@ -1,0 +1,63 @@
+
+<!--s{{message}}-->
+    
+
+
+
+
+
+<!--<div *ngIf="condition">Content to render when condition is true.</div>-->
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+    <div class="container table"  >
+   
+    <table class="table bg-light">
+   
+            <tr>
+                <th> Id</th>
+                <th> Name</th>
+                <th>Description</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Avatar</th>
+            </tr>
+      
+        
+            <tr >
+                <th>{{food.id}}</th>
+                <td>{{food.name}}</td>
+                <td>{{food.description}}</td>
+                <td>{{food.availability}}</td>
+                <td>{{food.price}}</td>
+              <!--  <td><img alt="{{food.name}}'s image" style="width: 200px; height: 200px;" [src]="food.avatar"/></td>-->
+              <td><img style="width: 200px; height: 200px;"   [src]="food.avatar"/></td>
+               
+              
+              </tr>
+       
+    </table>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<h4><a routerLink="/foodsList" class="nav-link">Back</a></h4>
+<!--<a href="/loginsucces" class="link-secondary">Back</a>-->
+
+

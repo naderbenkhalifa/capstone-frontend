@@ -1,0 +1,51 @@
+
+
+  <div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+        
+         
+    
+    <div class="center"> Login </div>
+    <!--<div class="mb-3" >
+      <label for="email" class="form-label">Email address:</label>
+      <input type="email" class="form-control"   placeholder="Enter  email" name="email" [(ngModel)]="user.email" >
+ 
+    </div>-->
+    &nbsp;
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Email address</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  name="email" [(ngModel)]="user.email">
+    </div>
+   <!-- <div class="mb-3">
+      <label for="passwordd" class="form-label">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter  password" name="passwordd" [(ngModel)]="user.password" >
+    </div>-->
+    &nbsp;
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+      <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  name="password" [(ngModel)]="user.password">
+    </div>
+    &nbsp;
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    &nbsp;
+    <div style="text-align:center">
+      <button type="submit" class="btn btn-primary btn-lg" (click)='signIn()'>Login</button>
+    </div>
+    &nbsp;
+    <div style="text-align:center">
+    <small class="btn btn-success btn-sm" [routerLink]="['/registration']"> Register </small>
+  </div>
+    
+
+ 
+        </div>
+      </div>
+    </div>
+
+
+
+

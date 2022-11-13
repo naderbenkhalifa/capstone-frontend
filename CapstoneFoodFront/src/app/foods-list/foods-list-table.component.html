@@ -1,0 +1,74 @@
+
+        
+       
+<div class="center"><h1>List Of Foods</h1></div>
+&nbsp;
+<div class="container table">
+    
+    
+    <table class="table bg-light">
+       
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Avatar</th>
+            </tr>
+        
+        
+            <tr *ngFor= "let food of foods">
+                <th>{{food.id}}</th>
+                <td>{{food.name}}</td>
+                <td>{{food.description}}</td>
+                <td>{{food.availability}}</td>
+                <td>{{food.price}}</td>
+                <td><img alt="{{food.name}}'s image" style="width: 200px; height: 200px;" [src]="food.avatar"/></td>
+                <td><div><button class="btn btn-info"  (click)="addToCart(food)">Add to Cart</button></div></td>
+               
+                
+               
+              </tr>
+        
+    </table>
+</div>
+&nbsp;
+<!--<h4><a routerLink="/loginsucces" class="nav-link">Back</a></h4>-->
+<a href="/loginsucces" class="link-secondary">Back</a>
+
+<!--<h1>Cart</h1>
+<table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>Id</th>
+        <th>foodName</th>
+        <th>Price</th>
+        
+        
+     
+     
+        
+        
+      </tr>
+      <tr *ngFor="let food of cartItemList" >
+        <td>{{food.id}}</td>
+        <td>{{food.foodName}}</td>
+        <td>{{food.price}}</td>
+        
+        
+     
+     
+        
+        
+      </tr>
+      </tbody>
+    </table>
+    <div class="row">
+        <div class="col-md-9">Total price</div>
+        <div class="col-md-3">{{totalPrice}}</div>
+
+    </div>-->
+      
+
+
